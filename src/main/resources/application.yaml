@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: local # 기본 환경 선택
+  datasource:
+    url: jdbc:mysql://localhost:3306/?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: present
+    driver-class-name: com.mysql.jdbc.Driver
+  http:
+    encoding:
+      charset: UTF-8
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
